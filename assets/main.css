@@ -9,6 +9,10 @@
   --nav-text-color: rgb(0, 0, 0);
 
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: "Inter", sans-serif;
   margin: 0;
@@ -366,10 +370,15 @@ h1 {
   text-align: center;
   align-items: center;
   z-index: 2;
-  /* margin: 1rem 1rem 0 1rem; */
 }
 .features img {
   width: 15rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.features img:hover {
+  transform: translateY(-10px); /* Moves card upward */
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3); /* Increases shadow */
 }
 
 /* .cda-feature-cards-grid{
@@ -416,8 +425,13 @@ h1 {
   width: 280px;
   align-items: center; 
   z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
-
+.card:hover {
+  transform: scale(0.95); /* Shrinks the card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slight shadow on hover */
+}
  .cda-cards-info-det h2 {
   margin: 20px 0px 0 0;
   color: var(--nav-text-color);
@@ -460,7 +474,32 @@ h1 {
   border-radius: 15px;
   box-shadow: 0px 16px 32px 2px rgba(0, 0, 0, 0.2);
   margin-inline: 0.5rem;
+  /* transition: all 0.3s ease; */
+  cursor: pointer;
+  transition: transform 0.1s ease; /* Transition for smooth rotation */
+  perspective: 1000px
 }
+/* .Detail-Blog-Card-Grids{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  perspective: 1000px;
+}
+.Detail-Blog-Card-Grids:hover {
+  transform: rotateY(10deg) rotateX(10deg);  Add tilt effect 
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);*/ /* Bigger shadow */
+
+/* Make the section invisible by default */
+.hidden-section {
+  opacity: 0;
+  transform: translateY(50px); /* Start slightly below */
+  transition: opacity 0.6s ease,
+  transform 1s ease-out; /* Animation properties */
+}
+
+.hidden-section.visible {
+  opacity: 1;
+  transform: translateY(0); /* Move to normal position */
+}
+
 .Detail-Blog{
   margin-bottom: 1.5rem;
 }
