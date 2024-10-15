@@ -96,7 +96,11 @@ body{
   padding-inline: 1.5rem;
   /* transition: all 0.3s; */
   display: block;
+  overflow-y: auto;
 }
+/* .left-section:-webkit-any(::-webkit-scrollbar){
+  height: 0;
+} */
 .barimg{
   padding: 20px;
   width: 10rem;
@@ -715,6 +719,7 @@ color: var(--footer-text-color);
     left: 0px;
     z-index: 1;
     transition: all 0s;
+    overflow-y: hidden;
   }
 
   .cda-nav-links .nav-links{
