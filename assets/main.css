@@ -150,6 +150,7 @@ body{
   border: 2px solid var(--nav-text-color);
   margin-right: 1rem;
   padding: 10px 2rem;
+
 }
 .login-btn:hover{
   background-color: #f6f6f6;
@@ -322,6 +323,7 @@ h1 {
   border: 2px solid var(--main_primary_color);
   width: 140px;
   cursor: pointer;
+  transition: all 0.3s;
 }
 .cda-buttons .cda-login{
   margin-right: 1rem;
@@ -558,6 +560,7 @@ color: var(--footer-text-color);
 .foot-items a{
   cursor: pointer;
   text-decoration: none;
+  transition: all 0.3s;
 }
 .foot-items a:hover{
   text-decoration:underline;
