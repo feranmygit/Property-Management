@@ -46,4 +46,9 @@ cards.forEach(card => {
   });
 });
 
+// const goTo = document.getElementById('goTo');
+// const removeGoto = document.getElementById('removeGoto');
 
+// goTo.addEventListener('click', function(){
+//     removeGoto.classList.toggle('active');
+// })
