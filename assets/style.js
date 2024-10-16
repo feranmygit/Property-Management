@@ -9,7 +9,7 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.classList.add('visible'); // Add the class to trigger the animation
     }
   });
-}, { threshold: 0.1 }); // Trigger when 10% of the section is visible
+}, { threshold: 0.7 }); // Trigger when 10% of the section is visible
 
 // Observe the target section
 observer.observe(section);
