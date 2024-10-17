@@ -29,7 +29,7 @@ body{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding:  7% 2.5rem 3% 2.5rem ;
+  padding:  7% 6% 3% 6% ;
   box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.2);
   position: relative;
 }
@@ -37,6 +37,7 @@ body{
   width: 1rem;
   overflow: hidden;
   display: block;
+  margin-right: 2%;
 }
 #input{
   display: none;
@@ -159,6 +160,13 @@ body{
 .signup-btn:hover{
 background-color: var(--footer-text-color);
 }
+.login-btn:active{
+  background-color: antiquewhite;
+  border: 2px solid antiquewhite;
+}
+.signup-btn:active{
+  background-color: antiquewhite;
+}
 .signup-btn{
   background-color: var(--main_primary_color);
   color: var(--card-bg-light);
@@ -216,6 +224,10 @@ background-color: var(--footer-text-color);
 .cda-buttons .btn:hover{
   background-color: #8f99f8a4;
   border: 2px solid #8f99f8a4;
+}
+.cda-buttons .btn:active{
+  border: 3px solid var(--main_primary_color);
+  padding: 5px;
 }
 .features {
   display: flex;
@@ -599,6 +611,11 @@ color: var(--footer-text-color);
   transition: all 0.3s;
   border-radius: 30px;
 }
+.cda-buttons .btn {
+  padding: 1rem;
+  width: 200px;
+  font-size: 1.2rem;
+}
 .nav-buttons{
   display: block;
 }
@@ -610,6 +627,9 @@ color: var(--footer-text-color);
   background-color: #f6f6f6;
   text-decoration: none;
   transition: all 0.3s;
+}
+.cda-nav-links .nav-links > li:active > a{
+  background-color: antiquewhite;
 }
   .Card-Grid{
     margin-inline: 4rem;
@@ -677,10 +697,6 @@ color: var(--footer-text-color);
   font-size: 1.3rem;
   padding-inline: 17%;
   line-height: 1.8rem;
-}
-.cda-buttons .btn {  
-  font-size: 1rem;
-  width: 160px;
 }
 }
 @media only screen and (min-width:1307px) {
