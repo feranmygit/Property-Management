@@ -39,7 +39,7 @@ body{
   display: block;
   margin-right: 2%;
 }
-#input{
+.input{
   display: none;
 }
 #hambugger{
@@ -74,13 +74,14 @@ body{
   position: absolute;
   cursor: pointer;
 }
-#input:checked ~ .left-section{
+.input:checked ~ .left-section{
   left: 0px;
   transition: all 0.3s;
 }
-.active{
-  display: none;
-}
+/* .active{
+  left: 0px;
+  position: fixed;
+} */
 .left-section{
   height: 1000vh;
   width: 100%;
@@ -98,6 +99,7 @@ body{
   padding-inline: 1.5rem;
   display: block;
   overflow-y: auto;
+  transition: 1s ease;
 }
 .barimg{
   padding: 20px;
@@ -561,6 +563,9 @@ color: var(--footer-text-color);
   .Detail-Blog-Card-Grids {
     margin-inline: 1rem;
 }
+.left-section{
+  transition: 0s ease;
+}
 }
 @media only screen and (min-width:975px) {
   .cda-head-section{
@@ -596,7 +601,7 @@ color: var(--footer-text-color);
     justify-content: center;
     left: 0px;
     z-index: 1;
-    transition: all 0s;
+    transition: 0s;
     overflow-y: hidden;
   }
   .cda-nav-links .nav-links{
@@ -702,9 +707,6 @@ color: var(--footer-text-color);
 @media only screen and (min-width:1307px) {
   .Card-Grid{
     margin-inline: 14rem;
-  }
-  .features-cda {
-    gap: 7rem;
   }
 }
 @media only screen and (min-width:1355px) {

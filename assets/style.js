@@ -48,7 +48,8 @@ cards.forEach(card => {
 
 // const goTo = document.getElementById('goTo');
 // const removeGoto = document.getElementById('removeGoto');
+// const hambugger = document.getElementById('hambugger');
 
 // goTo.addEventListener('click', function(){
-//     removeGoto.classList.toggle('active');
+//   removeGoto.classList.toggle('input');
 // })
