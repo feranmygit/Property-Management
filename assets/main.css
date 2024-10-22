@@ -78,10 +78,6 @@ body{
   left: 0px;
   transition: all 0.3s;
 }
-/* .active{
-  left: 0px;
-  position: fixed;
-} */
 .left-section{
   height: 1000vh;
   width: 100%;
@@ -276,6 +272,9 @@ background-color: var(--footer-text-color);
   padding-top: 5rem;
   position: relative;
 }
+.last-card{
+  margin-top: 0;
+}
 .card {
   border-radius: 10px;
   width: 270px;
@@ -366,7 +365,7 @@ background-color: var(--footer-text-color);
 }
 .card-details-mssg{
   color: var(--main_primary_color);
-  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+  font-size: clamp(0.85rem, 2.5vw, 0.95rem);
   margin: 0;
   line-height: 1.2rem;
 }
@@ -423,7 +422,7 @@ background-color: var(--footer-text-color);
 }
 .foot-paragraph-mssg{
   margin-top: 1rem;
-  font-size: clamp(0.7rem, 2.5vw, 0.8rem);
+  font-size: clamp(0.85rem, 2.5vw, 0.95rem);
 }
 .foot-centre{
   text-align: start;
@@ -438,7 +437,7 @@ color: var(--footer-text-color);
 }
 .foot-items{
   margin-bottom: 0.8rem;
-  font-size: clamp(0.7rem, 2.5vw, 0.8rem);
+  font-size: clamp(0.85rem, 2.5vw, 0.95rem);
 }
 .foot-items a{
   cursor: pointer;
