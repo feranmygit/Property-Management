@@ -734,7 +734,6 @@ color: var(--footer-text-color);
 }
 .card-details-mssg {
   font-size: 1.2rem;
-  padding-inline: 2rem;
 }
 .Detail-Blog-Card-Grids {
   padding: 3rem 3rem 2.5rem 3rem;
