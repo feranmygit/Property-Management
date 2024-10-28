@@ -705,16 +705,13 @@ color: var(--footer-text-color);
 }
 @media only screen and (min-width:1307px) {
   .Card-Grid{
-    margin-inline: 14rem;
+    margin-inline: 13rem;
   }
   .card-blog-messg img {
     width: 80px;
   }
 }
 @media only screen and (min-width:1355px) {
-  .Card-Grid{
-    margin-inline: 16rem;
-  }
   .content > h1 {
     padding-inline: 20%;
 }
